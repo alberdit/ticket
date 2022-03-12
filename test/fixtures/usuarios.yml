@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  primerapellido: MyString
+  segundoapellido: MyString
+  nacimiento: 2022-03-11
+  habilitado: false
+
+two:
+  nombre: MyString
+  primerapellido: MyString
+  segundoapellido: MyString
+  nacimiento: 2022-03-11
+  habilitado: false
