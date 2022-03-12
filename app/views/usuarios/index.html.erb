@@ -1,14 +1,56 @@
 <p style="color: green"><%= notice %></p>
+<body >
+<center>
+<table>
 
-<h1>Usuarios</h1>
-
-<div id="usuarios">
+<tr>
+  <td align=center colspan=2 height=40px>
+  
+  <TituloTabla>Usuarios</TituloTabla>
+  </td> 
+<tr>  
+     
   <% @usuarios.each do |usuario| %>
-    <%= render usuario %>
-    <p>
-      <%= link_to "Show this usuario", usuario %>
-    </p>
-  <% end %>
-</div>
 
-<%= link_to "New usuario", new_usuario_path %>
+             <div id="usuarios">
+        <tr width=1000px>
+            <td  height=20px aligh=left> 
+                    <%= link_to id = usuario.id , usuario %> 
+            </td>
+            <td><%= (usuario.nombre); (usuario.primerapellido); (usuario.segundoapellido); %> </td>
+         </tr>
+              </div>          
+  <% end %>
+</tr>
+   <!--   <div id="usuarios">
+        <% @usuarios.each do |usuario| %>
+          <%= render usuario %>
+          <p>
+            <%= link_to "Show this usuario", usuario %>
+          </p>
+        <% end %>
+      </div> -->
+
+
+
+
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan=2 height=100%></td>
+  </tr>
+  <tr>
+      <td colspan=2 valign=bottom>
+      
+      <%= link_to "New usuario", new_usuario_path %>
+      <br>
+      <%= link_to "Volver al Inicio", welcome_homepage_path %>
+      
+      </td>
+  </tr>
+      </table>
+      </center>
+      </body>
+
+  
